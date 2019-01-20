@@ -7,10 +7,11 @@ The Github profile seach app is web based, it allows users search for github use
 * Access github on a web browser
 * clone this repository  from https://github.com/abbyshabi/Git-hub/tree/master
 ## Behaviour Driven Development
-* A system that allows the user test their knowledge of javascript
-* A user anwers the 3 questions out of four, system tells user to please answer all questions
-* A user answers all questions , system tells user their score
-* A user uses the reset button to refresh the page
+* A system that allows the user search through Github for users and repositories
+* The user first views the landing page of author, and can click to view any of the repositories .
+* The user can click the profile image on the right to access actual github profile of author
+* The user can click on search github link to search for other repositories
+* The user can click the back to my profile link to access author's page
 ## Live Demo
  Here is a link to a live demo : https://abbyshabi.github.io/Git-hub/
 
