@@ -26,5 +26,9 @@ getProfileInfo() : any{
     .pipe(map(res=>res));
   }
   
+getProfileRepos() :any{
+  return this.http.get("https://api.github.com/users/" + this.username + "/repos?access_token=d2c75a4d9ecfb3fc0c778d5821f034f7a6b1717e")//+ this.clientid + "&client_secret" +this.clientsecret)
+  .pipe(map(res=>res)); 
+}
 
 }
