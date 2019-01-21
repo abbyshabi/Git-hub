@@ -7,83 +7,79 @@
           </a>
     </div>
   </div>
-
-  <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px"> 
-    <div class="w3-row">
-        <div class="w3-col m3">
-            <div class="w3-card w3-round w3-white">
-                <div class="w3-container">
-                    <div class="w3-white">
-                    <h4 class="w3-center">My Profile</h4>
-                    <p class="w3-center"><img src="{{profile.avatar_url}}" class="w3-circle" style="height:120px;width:120px"></p><hr>
-                    <p><i class="fa fa-user fa-fw w3-margin-right w3-text-theme"></i> Name: <b>{{profile.name}} </b></p>
-                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Username: <b>{{profile.login }} </b></p>
-                    <p ><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Place : <b>{{profile.location}} </b></p>
-                    <p><i class="fa fa-history fa-fw w3-margin-right w3-text-theme"></i> Joined : <b>{{profile.created_at}} </b></p>
-                    <p><i class="fa fa-history fa-fw w3-margin-right w3-text-theme"></i> Contact : <a href="emailto:{{profile.email}}">{{profile.email}} </a></p>
-              
-                  </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="w3-col m7">
-
-            <div class="w3-row-padding">
-                    <div class="w3-col m12">
-                      <div class="w3-card w3-round w3-light-green">
-                        <div class="w3-container w3-padding">
-                          <h3 class="w3-opacity"> <b> Search for other GitHub Users</b></h3>
-                                <button style="color:black;">
-                             <a href="/repo" routerLinkActive='active'> Click Here </a>
-                             </button>
-                        </div>
-                      </div>
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px"> 
+      <div class="w3-row">
+          <div class="w3-col m3">
+              <div class="w3-card w3-round w3-white">
+                  <div class="w3-container">
+                      <div class="w3-white">
+                      <h4 class="w3-center">My Profile</h4>
+                      <p class="w3-center"><img src="{{profile.avatar_url}}" class="w3-circle" style="height:120px;width:120px"></p><hr>
+                      <p><i class="fa fa-user fa-fw w3-margin-right w3-text-theme"></i> Name: <b>{{profile.name}} </b></p>
+                      <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Username: <b>{{profile.login }} </b></p>
+                      <p ><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Place : <b>{{profile.location}} </b></p>
+                      <p><i class="fa fa-history fa-fw w3-margin-right w3-text-theme"></i> Joined : <b>{{profile.created_at}} </b></p>
+                      <p><i class="fa fa-history fa-fw w3-margin-right w3-text-theme"></i> Contact : <a href="emailto:{{profile.email}}">{{profile.email}} </a></p>
+                
+                    </div>
                     </div>
                 </div>
-
-                <div class="w3-container w3-card w3-white w3-round w3-margin">
-                  <h2 class="title" class="w3-center" appHighlight>Repositories</h2>
-                  <section class="box" *ngFor ="let repo of repos">
-                      <p appHighlight> <b> <i>{{repo.name}} </i></b></p> <br> <p> Description: {{repo.description}}</p> <br><a href="{{repo.git_url}}"> View on git </a>
-                      <br>
-                  
-                    </section>
-              </div>
             </div>
-
-            <div class="w3-col m2">
-              <div class="w3-container">
-                  <div class="w3-bar-block w3-border w3-light-green " style="width:100%">
-                  <div class="w3-bar-item"> <i class= "fa fa-laptop"></i> {{profile.public_repos}} Repositories</div><hr>
-                  <div class="w3-bar-item fa fa-users"> {{profile.followers}} Followers</div><hr>
-                  <div class="w3-bar-item fa fa-users"> {{profile.following}} Following </div><hr>
-                  <div class="w3-bar-item fa fa-share-alt"> {{profile.public_gists}} Public Gists</div>
-                </div><br>
-
-                <div class="w3-container">
-                      
-                  <div class="w3-bar-block w3-border w3-light-green" style="width:100%">
-                  <h5 class="w3-center fa fa-pencil"> Bio </h5><hr>
-                <p>{{profile.bio}}</p>
-                
+            <div class="w3-col m7">
+  
+                  <div class="w3-row-padding">
+                          <div class="w3-col m12">
+                            <div class="w3-card w3-round w3-light-green">
+                              <div class="w3-container w3-padding">
+                                <h3 class="w3-opacity"> <b> Search for other GitHub Users</b></h3>
+                                      <button style="color:black;">
+                                   <a href="/repo" routerLinkActive='active'> Click Here </a>
+                                   </button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+  
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+                    <h2 class="title" class="w3-center" appHighlight>Repositories</h2>
+                    <section class="box" *ngFor ="let repo of repos">
+                        <p appHighlight> <b> <i>{{repo.name}} </i></b></p> <br> <p> Description: {{repo.description}}</p> <br><a href="{{repo.git_url}}"> View on git </a>
+                        <br>
+                    
+                      </section>
                 </div>
+              </div>
+              <div class="w3-col m2">
+                  <div class="w3-container">
+                      <div class="w3-bar-block w3-border w3-light-green " style="width:100%">
+                      <div class="w3-bar-item"> <i class= "fa fa-laptop"></i> {{profile.public_repos}} Repositories</div><hr>
+                      <div class="w3-bar-item fa fa-users"> {{profile.followers}} Followers</div><hr>
+                      <div class="w3-bar-item fa fa-users"> {{profile.following}} Following </div><hr>
+                      <div class="w3-bar-item fa fa-share-alt"> {{profile.public_gists}} Public Gists</div>
+                    </div><br>
+                    <div class="w3-container">
+                        
+                          <div class="w3-bar-block w3-border w3-light-green" style="width:100%">
+                          <h5 class="w3-center fa fa-pencil"> Bio </h5><hr>
+                        <p>{{profile.bio}}</p>
+                        
+                        </div>
+                        </div>
+     
                 </div>
-
-        </div>
-
-
+  
+  
+              </div>
       </div>
-</div>
-</div>
-</body>
-<footer class="w3-container w3-light-green w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
- 
-</footer>
+    </div>
+  </body>
+  <footer class="w3-container w3-light-green w3-center w3-margin-top">
+          <p>Find me on social media.</p>
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+         
+        </footer>
