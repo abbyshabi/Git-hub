@@ -8,8 +8,10 @@ import { Profile} from '../profile'
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  private profile: any[];
+  private repos :any[]; 
 
-  constructor() { }
+  constructor(private profileService: ProfileService) { }
 
   ngOnInit() {
   }
