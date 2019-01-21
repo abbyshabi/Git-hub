@@ -1,0 +1,15 @@
+img{
+    border-radius: 50%;
+    height: 50%;
+
+}
+.box{
+    color: black;
+    border-bottom: 	 green solid;
+    padding: 20px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin:20px;
+    align-content: center;
+    text-align: center;
+ }
