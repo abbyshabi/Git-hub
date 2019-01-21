@@ -8,6 +8,7 @@ import{ FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { RepoComponent } from './repo/repo.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { RepoComponent } from './repo/repo.component';
     AppComponent,
     ProfileComponent,
     RepoComponent,
+    HighlightDirective,
    
   ],
   imports: [
