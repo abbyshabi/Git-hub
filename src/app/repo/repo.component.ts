@@ -28,7 +28,13 @@ export class RepoComponent implements OnInit {
     });
     
   }
-  
+  findRepo(){
+    this.profileService.getRepo().subscribe((repository :Repository[]) =>{
+      console.log(repository);
+      this.repository= repository;
+    });
+   
+  }
 
   ngOnInit() {
   }
