@@ -10,8 +10,7 @@ export class ProfileService {
   private username : string;
   private reponame :string;
   
-  //private clientid:'45c711be5b7b227c5b653';
- // private clientsecret:'9b5026866f07b1eb08440f7581b9ab0dd49e604a';
+  
   
   constructor( private http :HttpClient) { 
       console.log ("service is now working !");
