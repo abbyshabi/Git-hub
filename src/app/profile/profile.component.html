@@ -41,3 +41,13 @@
                       </div>
                     </div>
                 </div>
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+                  <h2 class="title" class="w3-center" appHighlight>Repositories</h2>
+                  <section class="box" *ngFor ="let repo of repos">
+                      <p appHighlight> <b> <i>{{repo.name}} </i></b></p> <br> <p> Description: {{repo.description}}</p> <br><a href="{{repo.git_url}}"> View on git </a>
+                      <br>
+                  
+                    </section>
+              </div>
+            </div>
